@@ -1,0 +1,30 @@
+html {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+.card {
+	box-shadow: 0px 0px 10px 1px rgba(131, 131, 131, 0.3);;
+-webkit-box-shadow: 0px 0px 10px 1px rgba(131, 131, 131, 0.3);;
+-moz-box-shadow: 0px 0px 10px 1px rgba(131, 131, 131, 0.3);;
+}
+
+#description {
+	margin-bottom: 0;
+	font-weight: bold;
+}
+/*.wrapper {
+	width: 60%;
+	margin: 0 auto;
+	display: inline-block;
+}
+*/
+textarea {
+	display: block;
+	width: 100%;
+	min-height: 3rem;
+}

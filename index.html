@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+		<title>FCC Survey Form</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+
+<body>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<div class="container py-5">
+				<div class="row">
+						<div class="col-md-12">
+								<h1 id="title" class="text-center text-white mb-4">Survey Form</h1>
+								<div class="row">
+										<div class="col-md-6 mx-auto">
+												<div class="card rounded-0">
+														<div class="card-header">
+																<p id="description">Please fill the form</p>
+														</div>
+														<div class="card-body">
+																<form class="form" role="form" autocomplete="off" id="survey-form" novalidate="" method="POST">
+																		<div class="form-group">
+																				<label for="name" id="name-label">Name</label>
+																				<input type="text" class="form-control" name="name" id="name" required="true" placeholder="Your name">
+																				<div class="invalid-feedback">Oops, you missed this one.</div>
+																		</div>
+																		<div class="form-group">
+																				<label for="email" id="email-label">Email</label>
+																				<input type="email" class="form-control" id="email" required="true" autocomplete="email" placeholder="Your email">
+																		</div>
+																		<div class="form-group">
+																				<label for="textarea">Additional comments</label>
+																				<textarea name="commentsHere" id="textarea" class="form-control"></textarea>
+																		</div>
+																		<div class="form-group">
+																				<label for="number" id="number-label">Number</label>
+																				<input type="number" id="number" class="form-control" min="0" max="10" placeholder="Your number">
+																		</div>
+																		<div class="form-group">
+																				<label for="dropdown" id="dropdown-label">Dropdown</label>
+																				<select type="number" id="dropdown" class="form-control">
+																						<option value="1">1</option>
+																						<option value="2">2</option>
+																						<option value="3">3</option>
+																						<option value="4">4</option>
+																						<option value="5">5</option>
+																						<option value="6">6</option>
+																						<option value="7">7</option>
+																						<option value="8">8</option>
+																						<option value="9">9</option>
+																						<option value="10">10</option>
+																				</select>
+																		</div>
+																		<div class="form-group">
+																				<fieldset>
+																				</fieldset>
+																				<label for="number" id="number-label">Number</label>
+																				<input type="number" id="number" class="form-control" min="0" max="10" placeholder="Your number">
+																		</div>
+																		<div class="form-check">
+																				<input class="form-check-input" type="radio" name="radios" id="radio1" value="option1" checked>
+																				<label class="form-check-label" for="radio1">
+																						Default radio
+																				</label>
+																		</div>
+																		<div class="form-check">
+																				<input class="form-check-input" type="radio" name="radios" id="radio2" value="option2">
+																				<label class="form-check-label" for="radio2">
+																						Second default radio
+																				</label>
+																		</div>
+																		<div class="form-check">
+																				<input class="form-check-input" type="radio" name="radios" id="radio3" value="option3">
+																				<label class="form-check-label" for="radio3">
+																						Third default radio
+																				</label>
+																		</div>
+																		<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="1" id="checkbox1">
+																				<label class="form-check-label" for="checkbox1">
+																						Default checkbox
+																				</label>
+																		</div>
+																		<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="2" id="checkbox2">
+																				<label class="form-check-label" for="checkbox2">
+																						Second default checkbox
+																				</label>
+																		</div>
+																		<button type="submit" class="btn btn-success btn-lg float-right" id="submit">Submit</button>
+																</form>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</body>
+
+</html>
